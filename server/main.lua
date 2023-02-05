@@ -2046,7 +2046,7 @@ QBCore.Commands.Add("giveitem", "Give An Item (Admin Only)", {{name="id", help="
 				elseif itemData["name"] == "harness" then
 					info.uses = 20
 				elseif itemData["name"] == "markedbills" then
-					info.worth = math.random(5000, 10000)
+					info.worth = math.random(800, 1500)
 				elseif itemData["name"] == "labkey" then
 					info.lab = exports["qb-methlab"]:GenerateRandomLab()
 				elseif itemData["name"] == "printerdocument" then
