@@ -218,13 +218,13 @@ Config.CraftingItems = {
     },
 }
 
-Config.AttachmentCraftingLocation = vector3(88.91, 3743.88, 40.77) -- Only needed if not using target
+Config.AttachmentCraftingLocation = vector3(1322.5, -1652.68, 44.25)
 
 Config.AttachmentCrafting = {
     ["items"] = {
         [1] = {
             name = "pistol_extendedclip",
-            amount = 50,
+            amount = 10,
             info = {},
             costs = {
                 ["metalscrap"] = 140,
@@ -238,7 +238,7 @@ Config.AttachmentCrafting = {
         },
         [2] = {
             name = "pistol_suppressor",
-            amount = 50,
+            amount = 10,
             info = {},
             costs = {
                 ["metalscrap"] = 165,
@@ -252,7 +252,7 @@ Config.AttachmentCrafting = {
         },
         [3] = {
             name = "smg_extendedclip",
-            amount = 50,
+            amount = 10,
             info = {},
             costs = {
                 ["metalscrap"] = 190,
@@ -266,7 +266,7 @@ Config.AttachmentCrafting = {
         },
         [4] = {
             name = "microsmg_extendedclip",
-            amount = 50,
+            amount = 5,
             info = {},
             costs = {
                 ["metalscrap"] = 205,
@@ -280,7 +280,7 @@ Config.AttachmentCrafting = {
         },
         [5] = {
             name = "smg_drum",
-            amount = 50,
+            amount = 5,
             info = {},
             costs = {
                 ["metalscrap"] = 230,
@@ -294,7 +294,7 @@ Config.AttachmentCrafting = {
         },
         [6] = {
             name = "smg_scope",
-            amount = 50,
+            amount = 5,
             info = {},
             costs = {
                 ["metalscrap"] = 255,
@@ -305,36 +305,6 @@ Config.AttachmentCrafting = {
             slot = 6,
             threshold = 100,
             points = 6,
-        },
-        [7] = {
-            name = "assaultrifle_extendedclip",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 270,
-                ["steel"] = 435,
-                ["rubber"] = 155,
-                ["smg_extendedclip"] = 1,
-            },
-            type = "item",
-            slot = 7,
-            threshold = 150,
-            points = 7,
-        },
-        [8] = {
-            name = "assaultrifle_drum",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 300,
-                ["steel"] = 469,
-                ["rubber"] = 170,
-                ["smg_extendedclip"] = 2,
-            },
-            type = "item",
-            slot = 8,
-            threshold = 200,
-            points = 8,
         },
     }
 }
