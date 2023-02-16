@@ -1826,6 +1826,7 @@ RegisterNetEvent('inventory:server:SetInventoryData', function(fromInventory, to
 		local itemData = Config.AttachmentCrafting["items"][fromSlot]
 		if hasCraftItems(src, itemData.costs, fromAmount) then
 			TriggerClientEvent("inventory:client:CraftAttachment", src, itemData.name, itemData.costs, fromAmount, toSlot, itemData.points)
+			TriggerClientEvent('ak4y-battlepass:addtaskcount:premium', source, 2, 5)
 		else
 			TriggerClientEvent("inventory:client:UpdatePlayerInventory", src, true)
 			TriggerClientEvent('QBCore:Notify', src, "You don't have the right items..", "error")
