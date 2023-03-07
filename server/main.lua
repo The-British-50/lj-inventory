@@ -1270,7 +1270,7 @@ RegisterNetEvent('inventory:server:OpenInventory', function(name, id, other)
 					if Player.PlayerData.job.name == "police" and Player.PlayerData.job.onduty then
 						secondInv.slots = Config.MaxInventorySlots
 					else
-						secondInv.slots = Config.MaxInventorySlots - 1
+						secondInv.slots = Config.MaxInventorySlots
 					end
 					Wait(250)
 				end
