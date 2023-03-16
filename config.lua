@@ -1,6 +1,6 @@
 Config = {}
 
-Config.UseTarget = GetConvar('UseTarget', 'false') == 'false' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
+Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
 
 Config.MaxInventoryWeight = 140000 -- Max weight a player can carry (default 120kg, written in grams)
 Config.MaxInventorySlots = 40 -- Max inventory slots for a player
@@ -11,7 +11,7 @@ Config.UseItemDrop = true -- This will enable item object to spawn on drops inst
 Config.ItemDropObject = `sf_prop_sf_backpack_01a` -- if Config.UseItemDrop is true, this will be the prop that spawns for the item
 
 Config.Progressbar = {
-    Enable = true,         -- True to Enable the progressbar while opening inventory
+    Enable = false,         -- True to Enable the progressbar while opening inventory
     minT = 250,             -- Min Time for Inventory to open
     maxT = 500              -- Max Time for Inventory to open
 }
