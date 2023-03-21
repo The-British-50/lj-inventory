@@ -502,6 +502,16 @@ function FormatItemInfo(itemData, dom) {
                 itemData.info.documentcreator +
                 "</span></p>"
             );
+        } else if (itemData.name == "lawyerpass") {
+              $(".item-info-title").html("<p>" + itemData.label + "</p>");
+              $(".item-info-description").html(
+                  "<p><strong>Bar ID: </strong><span>" +
+                  itemData.info.baridnumber +
+                  "</span></p><p><strong>Full Name: </strong><span>" +
+                  itemData.info.lawyername +
+                  "</span></p>"
+              );
+  
         } else if (itemData.name == "weaponlicense") {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html(
